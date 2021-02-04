@@ -15,6 +15,24 @@ eventHub.addEventListener("change", changeEvent => {
     }
 })
 
+export const EaterySelect = () => {
+    getEateries()
+    .then(() => {
+        const eateries = useEateries()
+                render(eateries)
+    })
+}
+
+const render = eateriesCollection => {
+    contentTarget.innerHTML =  `
+        <select class="dropdown" id="eaterySelect">
+            <option value="0">Please select an eatery...</option>
+            ${eateriesCollection.map(eateries => `<option value="${eateries.id}">${eateries.businessName}</option>`).join("")
+        }
+        </select>
+    `
+}
+
 // import both functions from Provider
 // query select into main container
 // set contentTarget to correct file

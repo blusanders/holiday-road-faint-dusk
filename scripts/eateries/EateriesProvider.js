@@ -14,7 +14,7 @@ export const getEateries = () => {
     .then(response => response.json())
     .then(eateriesArray => {
         eateries = eateriesArray
-        console.log(eateries)
+        // console.log(eateries)
     })
  
 }
