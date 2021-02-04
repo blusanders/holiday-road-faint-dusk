@@ -13,5 +13,5 @@ import {getAttractions, useAttractions} from "./attractions/AttractionsProvider.
 
 // ParkList()
 
-console.log(useAttractions())
+
 getAttractions()
