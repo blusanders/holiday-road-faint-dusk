@@ -1,3 +1,8 @@
+
+import { ParksList } from "./parks/ParksProvider.js"
+
+ParksList()
+// import { getParks, useParks } from "./parks/ParkProvider.js"
 // console.log("Welcome to the main module")
 import { getParks, useParks } from "./parks/ParkProvider.js"
 import {getAttractions, useAttractions} from "./attractions/AttractionsProvider.js"
