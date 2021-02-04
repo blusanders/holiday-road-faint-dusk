@@ -1,6 +1,8 @@
-
 // import { getParks, useParks } from "./parks/ParkProvider.js"
-import {getAttractions, useAttractions} from "./attractions/AttractionsProvider.js"
+// import {getAttractions, useAttractions} from "./attractions/AttractionsProvider.js"
+import { ForecastPreview } from "./weather/WeatherPreview.js"
+
+
 // const ParkList = () => {
 //     getParks()
 //         .then(() => {
@@ -12,6 +14,6 @@ import {getAttractions, useAttractions} from "./attractions/AttractionsProvider.
 // }
 
 // ParkList()
+// getAttractions()
 
-
-getAttractions()
+ForecastPreview()
