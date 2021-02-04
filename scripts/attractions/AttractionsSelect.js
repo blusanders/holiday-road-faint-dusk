@@ -2,7 +2,7 @@ import { useAttractions, getAttractions} from "./AttractionsProvider.js"
 
 const eventHub = document.querySelector(".container")
 
-const contentTarget = document.querySelector(".attractionSelect")
+const contentTarget = document.querySelector(".itinerarySelect__activities")
 
 eventHub.addEventListener("change", changeEvent =>{
     if (changeEvent.target.id === "attractionSelect"){
