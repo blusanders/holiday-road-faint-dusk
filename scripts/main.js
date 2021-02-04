@@ -1,5 +1,20 @@
-console.log("Welcome to the main module")
 
 import { ParksList } from "./parks/ParksProvider.js"
 
 ParksList()
+// import { getParks, useParks } from "./parks/ParkProvider.js"
+import {getAttractions, useAttractions} from "./attractions/AttractionsProvider.js"
+// const ParkList = () => {
+//     getParks()
+//         .then(() => {
+//             const parks = useParks()
+//             parks.forEach(element => {
+//                 console.log(parks.length +" "+ element.name +" "+ element.id)
+//             });
+//         })
+// }
+
+// ParkList()
+
+
+getAttractions()
