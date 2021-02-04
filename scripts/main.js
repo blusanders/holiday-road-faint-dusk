@@ -1,3 +1,5 @@
+console.log("Welcome to the main module")
+
 import { getParks, useParks } from "./parks/ParkProvider.js"
 
 const ParkList = () => {
