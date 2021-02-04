@@ -3,7 +3,14 @@ import { ParksList } from "./parks/ParksProvider.js"
 
 ParksList()
 // import { getParks, useParks } from "./parks/ParkProvider.js"
+// console.log("Welcome to the main module")
+import { getParks, useParks } from "./parks/ParkProvider.js"
 import {getAttractions, useAttractions} from "./attractions/AttractionsProvider.js"
+import { getEateries, useEateries } from "./eateries/EateriesProvider.js";
+getEateries()
+useEateries()
+getAttractions()
+
 // const ParkList = () => {
 //     getParks()
 //         .then(() => {
@@ -17,4 +24,9 @@ import {getAttractions, useAttractions} from "./attractions/AttractionsProvider.
 // ParkList()
 
 
-getAttractions()
+
+
+
+
+
+
