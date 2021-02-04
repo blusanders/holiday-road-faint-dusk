@@ -1,13 +1,13 @@
 import { getParks, useParks } from "./ParksProvider.js";
 
-const contentTarget = document.querySelector(".parkSelect")
 const eventHub = document.querySelector(".container")
+const contentTarget = document.querySelector(".parkSelect")
 
 //render park list to select on DOM
 const render = parksCollection => {
 
     contentTarget.innerHTML = `
-        <select class="parkSelect" id=parkSelect>
+        <select class="dropdown" id=parkSelect>
             <option value="0">Please select a park...</option>
             ${
                 parksCollection.map(parkObj => {
@@ -30,10 +30,11 @@ export const ParksSelect = () => {
 
 
 eventHub.addEventListener("change", event => {
-    if (event.target.id === "parkSelect") {
+    console.log("HERE");
+    // if (event.target.id === "parkSelect") {
         
-        eventHub.dispatchEvent(customEvent)
-    }
+    //     eventHub.dispatchEvent(customEvent)
+    // }
 })
 
 
