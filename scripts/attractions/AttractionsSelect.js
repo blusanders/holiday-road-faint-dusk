@@ -15,6 +15,13 @@ eventHub.addEventListener("change", changeEvent =>{
     }
 })
 
+export const AttractionSelect = () => {
+    getAttractions()
+        .then( () => {
+            const attractions = useAttractions()
+            render(attractions)
+        })
+}
 
 
 
@@ -25,8 +32,8 @@ const render = (attractionsCollection) => {
     contentTarget.innerHTML = `
         <h3>Select a Bizarre Attraction</h3>
         <select class="dropdown" id="attractionSelect">
-            <option value="0">Please select a crime...</option>
-            ${attractionsCollection.map(attractionsObject =>`<option value="${attractionsObject.id}">${attractions.name}</option>`).join("")
+            <option value="0">Please select an attraction...</option>
+            ${attractionsCollection.map(attractionsObject =>`<option value="${attractionsObject.id}">${attractionsObject.name}</option>`).join("")
             }
         </select>
     `
