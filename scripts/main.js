@@ -1,11 +1,10 @@
-
 // console.log("Welcome to the main module")
-
-import { ParksList } from "./parks/ParksProvider.js"
+import "./Settings.js"
+import { ParksSelect } from "./parks/ParksSelect.js"
 import {getAttractions, useAttractions} from "./attractions/AttractionsProvider.js"
-import { getEateries, useEateries } from "./eateries/EateriesProvider.js";
+import { getEateries, useEateries } from "./eateries/EateriesProvider.js"
 getEateries()
 useEateries()
 getAttractions()
-ParksList()
+ParksSelect()
 
