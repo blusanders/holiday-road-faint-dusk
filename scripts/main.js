@@ -18,6 +18,8 @@ AttractionSelect()
 // useParks()
 EaterySelect()
 // ParksList()
+import {getAttractions, useAttractions} from "./attractions/AttractionsProvider.js"
+import { EateriesSelect } from "./eateries/EateriesSelect.js";
 
 // const ParkList = () => {
 //     getParks()
@@ -30,9 +32,11 @@ EaterySelect()
 // }
 
 
-
-
-
-
+EateriesSelect()
+ForecastPreview()
+getEateries()
+useEateries()
+getAttractions()
+AttractionSelect()
 
 
