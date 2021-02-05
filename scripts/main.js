@@ -13,7 +13,7 @@ useAttractions()
 // getParks()
 // useParks()
 EaterySelect()
-ParksList()
+// ParksList()
 // const ParkList = () => {
 //     getParks()
 //         .then(() => {
