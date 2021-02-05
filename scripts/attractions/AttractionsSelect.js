@@ -11,6 +11,7 @@ eventHub.addEventListener("change", changeEvent =>{
                 chosenAttraction: changeEvent.target.value
             }
         })
+        console.log("changeEvent")
         eventHub.dispatchEvent(customEvent)
     }
 })
