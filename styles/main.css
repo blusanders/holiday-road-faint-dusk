@@ -17,3 +17,18 @@ h1,h2,h3,h4,h5,h6 {
   font-family: "Patua One", serif;
   letter-spacing: 2px;
 }
+
+.weatherPreview {
+	
+	margin: 10px;
+}
+
+.forecast {
+	display: flex;
+}
+
+.forecastCard {
+	margin: 10px;
+	background-color: cornflowerblue;
+	padding: 20px;
+}
