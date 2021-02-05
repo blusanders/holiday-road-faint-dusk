@@ -1,7 +1,7 @@
 import { getEateries, useEateries } from "./EateriesProvider.js";
 
 const eventHub = document.querySelector(".container")
-const contentTarget = document.querySelector(".eateriesSelect")
+const contentTarget = document.querySelector(".eaterySelect")
 
 eventHub.addEventListener("change", changeEvent => {
     if(changeEvent.target.id === "eateriesSelected") {
@@ -19,13 +19,13 @@ export const EaterySelect = () => {
     getEateries()
     .then(() => {
         const eateries = useEateries()
-                render(eateries)
-    })
+        render(eateries)
+       })
 }
 
 const render = eateriesCollection => {
-    contentTarget.innerHTML =  `
-        <select class="dropdown" id="eaterySelect">
+        contentTarget.innerHTML =  `
+        <select class="dropdown" class="eaterySelect">
             <option value="0">Please select an eatery...</option>
             ${eateriesCollection.map(eateries => `<option value="${eateries.id}">${eateries.businessName}</option>`).join("")
         }
