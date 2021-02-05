@@ -24,7 +24,6 @@ export const ParksSelect = () => {
     getParks()
     .then( () => {
         const parksArray = useParks()
-        debugger
         render(parksArray)
     })
 }
