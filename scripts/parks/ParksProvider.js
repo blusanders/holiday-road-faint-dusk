@@ -1,5 +1,6 @@
 import {settings} from "./../Settings.js"
 
+
 let parks = [];
 
 const npsFetchString = "https://developer.nps.gov/api/v1/parks?limit=1000&api_key=" + settings.npsKey
