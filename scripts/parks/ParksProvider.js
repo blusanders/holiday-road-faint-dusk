@@ -14,3 +14,4 @@ export const getParks = () => {
     })
 }
 
+//Array.map(x=>x.activities.name="Arts and Culture")
