@@ -12,7 +12,7 @@ const render = parksCollection => {
             ${
                 parksCollection.map(parkObj => {
                     const fullName = parkObj.name
-                    return `<option value="${parkObj.latitude}&${parkObj.longitude}&${parkObj.id}">${fullName}</option>`
+                    return `<option value="${parkObj.latitude}&${parkObj.longitude}&${parkObj.parkCode}&${fullName}">${fullName}</option>`
                 }).join("")
             }
         </select>
@@ -32,13 +32,15 @@ export const ParksSelect = () => {
 
 //send change event for select with lat and lon and ParkID
 eventHub.addEventListener("change", event => {
+    // debugger
     if (event.target.id === "parkSelect" && event.target.value!=0) {
-        const [lat,lon,parkID] = event.target.value.split("&")
+        const [lat,lon,parkCode,parkName] = event.target.value.split("&")
         const customEvent = new CustomEvent("parkSelected", {
             detail: {
                 parkLon: lat,
                 parkLat: lon,
-                parkID: parkID
+                parkCode: parkCode,
+                parkName: parkName
             }
         })
         console.log(customEvent);
