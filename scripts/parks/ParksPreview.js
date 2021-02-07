@@ -31,10 +31,24 @@ export const getParkDetails = (parkCode) => {
     getParksOne(parkCode)       
     .then(() => {
         const parksArrayOne = useParksOne();
+        console.log(parksArrayOne)
         render(parksArrayOne);
     })
 }
 
 const render = (renderArray) => {
-    contentElement.innerHTML += "<br>"+renderArray[0].description
+    let htmlVar=""
+    renderArray[0].images.forEach(x => {
+        console.log(htmlVar)    
+        htmlVar += `<img alt=${x.altText} style="max-width:200px;max-height:200px;" class=detailImg src="${x.url}">`
+    });
+
+    contentElement.innerHTML += `
+    <br>
+    <b>${renderArray[0].name}</b>
+    <br>
+    ${renderArray[0].description}
+    <br>
+    ${htmlVar}
+    `
 }
