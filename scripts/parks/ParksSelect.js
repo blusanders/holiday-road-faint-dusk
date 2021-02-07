@@ -2,17 +2,22 @@ import { getParks, useParks } from "./ParksProvider.js";
 
 const eventHub = document.querySelector(".container")
 const contentTarget = document.querySelector(".parkSelect")
+const contentTargetPreview = document.querySelector(".parkPreview")
 
 //render park list to select on DOM
+//only render parks with activities
 const render = parksCollection => {
+    let counter=0
 
     contentTarget.innerHTML = `
         <select class="dropdown" id=parkSelect>
             <option value="0">Please select a park...</option>
             ${
                 parksCollection.map(parkObj => {
+                    if (parkObj.activities.length>0){
                     const fullName = parkObj.name
                     return `<option value="${parkObj.latitude}&${parkObj.longitude}&${parkObj.parkCode}&${fullName}">${fullName}</option>`
+                }
                 }).join("")
             }
         </select>
@@ -26,6 +31,7 @@ export const ParksSelect = () => {
     getParks()
     .then( () => {
         const parksArray = useParks()
+        console.log(parksArray)
         render(parksArray)
     })
 }

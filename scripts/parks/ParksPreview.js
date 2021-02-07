@@ -20,7 +20,6 @@ const renderButton = (parkCode) => {
 eventHub.addEventListener("click", event => {
     if (event.target.id === "detailsButton") {
         // debugger
-        console.log(event.target.value);
         getParkDetails(event.target.value);
     }
         // eventHub.dispatchEvent(customEvent)
@@ -31,7 +30,7 @@ export const getParkDetails = (parkCode) => {
     getParksOne(parkCode)       
     .then(() => {
         const parksArrayOne = useParksOne();
-        console.log(parksArrayOne)
+        // console.log(parksArrayOne)
         render(parksArrayOne);
     })
 }
