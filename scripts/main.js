@@ -5,7 +5,9 @@ import { getEateries, useEateries } from "./eateries/EateriesProvider.js";
 import { EaterySelect } from "./eateries/EateriesSelect.js";
 import { AttractionSelect } from "./attractions/AttractionsSelect.js";
 import { ForecastPreview } from "./weather/WeatherPreview.js"
+import "./eateries/EateriesPreview.js";
 import "./attractions/AttractionPreview.js"
+
 getEateries()
 useEateries()
 getAttractions()
