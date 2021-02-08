@@ -1,42 +1,35 @@
-@import "./itinerary.css";
-@import "./preview.css";
-@import "./select.css";
-
-
-/*Typography*/
-body,
-button,
-input,
-select,
-textarea {
-	color: #404040;
-	font-family: Verdana, Geneva, Tahoma, sans-serif;
-	font-size: 14px;
-	line-height: 1.5;
+@import url("https://fonts.googleapis.com/css?family=Comfortaa|Patua+One");
+@import "Modal.css"
+    /*Typography
+--------------------------------------------------------------*/
+    body,
+  button, input, select, textarea {
+  color: #404040;
+  font-family: "Comfortaa", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
 }
 
-h1,h2,h3,h4,h5,h6 {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Patua One", serif;
   letter-spacing: 2px;
 }
 
-/* Main Section Organizing */
-
-body {
-	margin: 0;
+.weatherPreview {
+  margin: 10px;
 }
 
-header {
-	background-color: salmon;
-	margin: 0;
-	padding: 10px;
-} 
-
-.container {
-	display: flex;
-	justify-content: space-between;
+.forecast {
+  display: flex;
 }
 
-.container__left {
-	width: 75%;
+.forecastCard {
+  margin: 10px;
+  background-color: cornflowerblue;
+  padding: 20px;
 }
