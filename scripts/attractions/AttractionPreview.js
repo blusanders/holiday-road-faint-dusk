@@ -6,8 +6,8 @@ eventHub.addEventListener("attractionChosen", event =>{
     contentTarget.innerHTML= event.detail.chosenAttraction
 })
 
-let attractionHTMLRepresentation = ""
+// let attractionHTMLRepresentation = ""
 
-const Attraction =  `
-<div class="attraction"
-`
+// const Attraction =  `
+// <div class="attraction"
+// `
