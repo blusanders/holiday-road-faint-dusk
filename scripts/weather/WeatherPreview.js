@@ -2,8 +2,8 @@ import {getForecast, useForecast} from "./WeatherProvider.js"
 
 const weatherPreview = document.querySelector(".weatherPreview")
 
-export const ForecastPreview = () => {
-    getForecast()
+export const ForecastPreview = (lat,lon) => {
+    getForecast(lat,lon)
     .then(() => {
       const forecastArray = useForecast()
       renderToDOM(forecastArray)

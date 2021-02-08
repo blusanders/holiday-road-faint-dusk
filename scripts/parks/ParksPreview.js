@@ -1,5 +1,5 @@
 import { getParksOne, useParksOne } from "./ParksProvider.js";
-import { ParksSelect } from "./ParksSelect.js";
+import { ForecastPreview } from "./../weather/WeatherPreview.js";
 
 const eventHub = document.querySelector(".container")
 const contentElement = document.querySelector(".parkPreview");
@@ -8,6 +8,7 @@ const modalTarget = document.querySelector(".parkModal");
 // Listen for the custom event if Park was selected
 eventHub.addEventListener("parkSelected", event => {
     // if parks is selected render name and detail button on DOM
+    ForecastPreview(event.detail.parkLon,event.detail.parkLon)
     contentElement.innerHTML=`
     <h3>${event.detail.parkName}</h3>
     ${renderButton(event.detail.parkCode)}
