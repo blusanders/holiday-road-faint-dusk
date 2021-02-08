@@ -6,6 +6,5 @@ export const getAttractions = () => {
         .then(response => response.json())
         .then(parsedAttractions =>{
             attractions = parsedAttractions
-            console.log(attractions)
         })
 }
