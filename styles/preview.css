@@ -1,0 +1,19 @@
+.container__left div {
+    margin: 20px;
+}
+
+.weatherPreview {
+	margin: 10px;
+	color: white;
+}
+
+.forecast {
+	display: flex;
+}
+
+.forecastCard {
+	margin: 10px;
+	background-color: cornflowerblue;
+	padding: 20px;
+	border-radius: 2%;
+}

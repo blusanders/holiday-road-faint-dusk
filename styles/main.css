@@ -1,7 +1,9 @@
-@import url("https://fonts.googleapis.com/css?family=Comfortaa|Patua+One");
+@import "./itinerary.css";
+@import "./preview.css";
+@import "./select.css";
 
-/*Typography
---------------------------------------------------------------*/
+
+/*Typography*/
 body,
 button,
 input,
@@ -17,6 +19,8 @@ h1,h2,h3,h4,h5,h6 {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   letter-spacing: 2px;
 }
+
+/* Main Section Organizing */
 
 body {
 	margin: 0;
@@ -35,26 +39,4 @@ header {
 
 .container__left {
 	margin: 20px;
-}
-
-aside {
-	width: 25%;
-	background-color: palegoldenrod;
-	margin: 0;
-}
-
-.weatherPreview {
-	margin: 10px;
-	color: white;
-}
-
-.forecast {
-	display: flex;
-}
-
-.forecastCard {
-	margin: 10px;
-	background-color: cornflowerblue;
-	padding: 20px;
-	border-radius: 2%;
 }
