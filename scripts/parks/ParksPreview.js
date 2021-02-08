@@ -12,6 +12,7 @@ eventHub.addEventListener("parkSelected", event => {
     contentElement.innerHTML=`
     <h3>${event.detail.parkName}</h3>
     ${renderButton(event.detail.parkCode)}`
+    modalTarget.innerHTML = ""
 })
 
 const renderButton = (parkCode) => {
@@ -47,12 +48,13 @@ const render = (renderArray) => {
     });
 
     modalTarget.innerHTML = `
-    <div class=model--parent>
-    <div class=model--content>
-    <div class=modalName><h3>${renderArray[0].name}</h3></div>
-    <div class=modalDesc>${renderArray[0].description}</div>
-    <div class=modalImg>${htmlVar}</div>
-    </div>
+    <div class="parks">
+        <div class=model--parent>
+        <div class=model--content>
+        <div class=modalName><h3>${renderArray[0].name}</h3></div>
+        <div class=modalDesc>${renderArray[0].addresses[0].city}, ${renderArray[0].addresses[0].stateCode}</div>
+        <div class=modalDesc>${renderArray[0].description}</div>
+        <div class=modalImg>${htmlVar}</div>
     </div>
     `
 }

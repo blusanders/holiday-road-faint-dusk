@@ -10,6 +10,7 @@ eventHub.addEventListener("eateriesSelected", event => {
     let [eatId, eatName] = event.detail.selectedEateryName.split("--")
     contentTarget.innerHTML = `<h3> ${eatName}</h3> 
     <button id=detailButton value="${eatId}">Details</button>`
+    modalTarget.innerHTML = ""
 })
 
 eventHub.addEventListener("click", event =>{
