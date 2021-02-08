@@ -14,7 +14,7 @@ textarea {
 }
 
 h1,h2,h3,h4,h5,h6 {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   letter-spacing: 2px;
 }
 
@@ -22,17 +22,30 @@ body {
 	margin: 0;
 }
 
+header {
+	background-color: salmon;
+	margin: 0;
+	padding: 10px;
+} 
+
 .container {
 	display: flex;
 	justify-content: space-between;
 }
 
+.container__left {
+	margin: 20px;
+}
+
 aside {
 	width: 25%;
+	background-color: palegoldenrod;
+	margin: 0;
 }
 
 .weatherPreview {
 	margin: 10px;
+	color: white;
 }
 
 .forecast {
@@ -43,4 +56,5 @@ aside {
 	margin: 10px;
 	background-color: cornflowerblue;
 	padding: 20px;
+	border-radius: 2%;
 }
