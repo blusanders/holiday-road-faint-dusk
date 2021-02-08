@@ -13,11 +13,7 @@ export const ForecastPreview = (lat,lon) => {
   const Forecast = (forecastObj) => {
       return `
       <div class="forecastCard"> 
-<<<<<<< HEAD
-        <div>${forecastObj.weather[0].dt}</div>
-=======
         <div>Date: ${convertDt(forecastObj.dt)}</div>
->>>>>>> main
         <div><img src="http://openweathermap.org/img/wn/${forecastObj.weather[0].icon}@2x.png"></div>
         <div>${forecastObj.weather[0].main}</div>
         <div>${forecastObj.weather[0].description}</div>
