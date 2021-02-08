@@ -6,7 +6,7 @@ const contentElement = document.querySelector(".parkPreview");
 
 // Listen for the custom event if Park was selected
 eventHub.addEventListener("parkSelected", event => {
-    // debugger
+    // if parks is selected render name and detail button on DOM
     contentElement.innerHTML=event.detail.parkName;
     contentElement.innerHTML += renderButton(event.detail.parkCode);
 })
@@ -18,19 +18,19 @@ const renderButton = (parkCode) => {
 }
 
 eventHub.addEventListener("click", event => {
+    //if details is clicked, render details on DOM
     if (event.target.id === "detailsButton") {
-        // debugger
         getParkDetails(event.target.value);
     }
         // eventHub.dispatchEvent(customEvent)
 })
 
-//get and use list of parks
+//get and use ONE park
 export const getParkDetails = (parkCode) => {
     getParksOne(parkCode)       
     .then(() => {
         const parksArrayOne = useParksOne();
-        // console.log(parksArrayOne)
+        console.log(parksArrayOne);
         render(parksArrayOne);
     })
 }
@@ -38,8 +38,8 @@ export const getParkDetails = (parkCode) => {
 const render = (renderArray) => {
     let htmlVar=""
     renderArray[0].images.forEach(x => {
-        console.log(htmlVar)    
-        htmlVar += `<img alt=${x.altText} style="max-width:200px;max-height:200px;" class=detailImg src="${x.url}">`
+        console.log(htmlVar)
+            htmlVar += `<img alt=${x.altText} style="width:150px;height:150px;" class=detailImg src="${x.url}">`
     });
 
     contentElement.innerHTML += `
