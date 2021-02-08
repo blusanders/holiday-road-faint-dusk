@@ -11,8 +11,7 @@ eventHub.addEventListener("parkSelected", event => {
     ForecastPreview(event.detail.parkLon,event.detail.parkLon)
     contentElement.innerHTML=`
     <h3>${event.detail.parkName}</h3>
-    ${renderButton(event.detail.parkCode)}
-    `
+    ${renderButton(event.detail.parkCode)}`
 })
 
 const renderButton = (parkCode) => {
@@ -50,7 +49,7 @@ const render = (renderArray) => {
     modalTarget.innerHTML = `
     <div class=model--parent>
     <div class=model--content>
-    <div class=modalName><h3>${renderArray[0].name}</div></b></div>
+    <div class=modalName><h3>${renderArray[0].name}</h3></div>
     <div class=modalDesc>${renderArray[0].description}</div>
     <div class=modalImg>${htmlVar}</div>
     </div>

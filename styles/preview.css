@@ -24,4 +24,9 @@
     border-radius: 2%;
     text-shadow: 0px 0px 5px skyblue;
     width: 160px;
+    height: auto;
+}
+
+.parkModal, .attractionModal, .eateriesModal {
+    background-color: whitesmoke;
 }
