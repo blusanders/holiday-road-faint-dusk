@@ -1,4 +1,3 @@
-.itinerarySelect__activities {
-    display: flex;
-    justify-content: space-around;
+.itinerarySelect {
+    margin: 10px;
 }

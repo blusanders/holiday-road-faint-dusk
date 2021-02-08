@@ -1,20 +1,27 @@
+.itineraryPreview {
+    background-color: #FFABA2;
+    padding: 20px;
+    margin: 20px 0;
+}
+
 .container__left div {
     margin: 15px;
 }
 
 .weatherPreview {
-	margin: 10px;
+	margin: 4px;
 	color: white;
 }
 
 .forecast {
-	display: flex;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-evenly;
 }
 
 .forecastCard {
-	margin: 10px;
 	background-color: lightskyblue;
-	padding: 20px;
     border-radius: 2%;
     text-shadow: 0px 0px 5px skyblue;
+    width: 160px;
 }
