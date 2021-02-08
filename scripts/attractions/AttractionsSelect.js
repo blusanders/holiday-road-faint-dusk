@@ -34,7 +34,7 @@ const render = (attractionsCollection) => {
         <h3>Select a Bizarre Attraction</h3>
         <select class="dropdown" id="attractionSelect">
             <option value="0">Please select an attraction...</option>
-            ${attractionsCollection.map(attractionsObject =>`<option value="${attractionsObject.name}">${attractionsObject.name}</option>`).join("")
+            ${attractionsCollection.map(attractionsObject =>`<option value="${attractionsObject.id}--${attractionsObject.name}">${attractionsObject.name}</option>`).join("")
             }
         </select>
     `

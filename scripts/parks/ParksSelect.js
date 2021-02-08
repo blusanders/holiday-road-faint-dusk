@@ -10,6 +10,7 @@ const render = parksCollection => {
     let counter=0
 
     contentTarget.innerHTML = `
+        <h3>Select A Park</h3>
         <select class="dropdown" id=parkSelect>
             <option value="0">Please select a park...</option>
             ${
