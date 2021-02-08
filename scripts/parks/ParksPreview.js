@@ -8,7 +8,7 @@ const modalTarget = document.querySelector(".parkModal");
 // Listen for the custom event if Park was selected
 eventHub.addEventListener("parkSelected", event => {
     // if parks is selected render name and detail button on DOM
-    ForecastPreview(event.detail.parkLon,event.detail.parkLon)
+    ForecastPreview(event.detail.parkLat,event.detail.parkLon)
     contentElement.innerHTML=`
     <h3>${event.detail.parkName}</h3>
     ${renderButton(event.detail.parkCode)}`
