@@ -46,11 +46,13 @@ const render = (renderArray) => {
             htmlVar += `<img alt=${x.altText} style="width:150px;height:150px;" class=detailImg src="${x.url}">`
     });
 
-    modalTarget.innerHTML += `
-    <div class=modal>
+    modalTarget.innerHTML = `
+    <div class=model--parent>
+    <div class=model--content>
     <div class=modalName><h3>${renderArray[0].name}</div></b></div>
     <div class=modalDesc>${renderArray[0].description}</div>
     <div class=modalImg>${htmlVar}</div>
+    </div>
     </div>
     `
 }
