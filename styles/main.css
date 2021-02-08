@@ -8,18 +8,30 @@ input,
 select,
 textarea {
 	color: #404040;
-	font-family: "Comfortaa", Arial, sans-serif;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	font-size: 14px;
 	line-height: 1.5;
 }
 
 h1,h2,h3,h4,h5,h6 {
-  font-family: "Patua One", serif;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
   letter-spacing: 2px;
 }
 
+body {
+	margin: 0;
+}
+
+.container {
+	display: flex;
+	justify-content: space-between;
+}
+
+aside {
+	width: 25%;
+}
+
 .weatherPreview {
-	
 	margin: 10px;
 }
 
