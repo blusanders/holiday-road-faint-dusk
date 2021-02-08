@@ -13,7 +13,7 @@ export const ForecastPreview = () => {
   const Forecast = (forecastObj) => {
       return `
       <div class="forecastCard"> 
-        <div>Date: ${forecastObj.weather[0].dt}</div>
+        <div>${forecastObj.weather[0].dt}</div>
         <div><img src="http://openweathermap.org/img/wn/${forecastObj.weather[0].icon}@2x.png"></div>
         <div>${forecastObj.weather[0].main}</div>
         <div>${forecastObj.weather[0].description}</div>

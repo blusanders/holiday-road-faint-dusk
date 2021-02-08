@@ -1,5 +1,11 @@
-.container__right {
+aside {
 	width: 25%;
 	background-color: dimgray;
-	margin: 0;
+    margin: 0;
+    height: 1000px;
+}
+
+.iteneraryCard {
+    margin: 30px;
+    padding: 30px
 }
