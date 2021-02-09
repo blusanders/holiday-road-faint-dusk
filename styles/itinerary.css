@@ -1,11 +1,21 @@
-aside {
+.container__right {
 	width: 25%;
-	background-color: dimgray;
-    margin: 0;
-    height: 1000px;
+	background-color: #393956;
 }
 
-.iteneraryCard {
+.itineraryCard {
     margin: 30px;
-    padding: 30px
+    padding: 10px 30px 30px;
+    background-color: #F7F0F0;
+    border-radius: 3px;
+}
+
+.itineraryCard button {
+    border: 1px solid #F7F0F0;
+    color: #F7F0F0;
+    padding: 4px;
+    border-radius: 3px;
+    background-color: #ED6A5A;
+    font-size: 10pt;
+
 }
