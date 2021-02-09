@@ -21,14 +21,21 @@
 }
 
 .forecastCard {
-    background-color: #85E9EA;
+    background-color: #7CDEDE;
     color: white;
     border-radius: 2%;
-    text-shadow: 0px 0px 1px gray;
+    /* text-shadow: 0px 0px 1px gray; */
     width: 160px;
     font-size: 18px;
 }
 
 .forecastCard div {
     padding: 0;
+}
+.detailsButton {
+    border: 1px solid #F7F0F0;
+    color: #F7F0F0;
+    padding: 4px;
+    background-color: #ED6A5A;
+    font-size: 10pt;
 }
