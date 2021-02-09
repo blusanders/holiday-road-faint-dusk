@@ -41,3 +41,12 @@ button {
     background-color: #edf6f9;
     font-size: 10pt;
 }
+
+.parkModal, .attractionModal, .eateriesModal {
+    background-color: #e29578;
+    
+}
+
+.parks, .eatery, .attractions {
+    padding: 20px;
+}

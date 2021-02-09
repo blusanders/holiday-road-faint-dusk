@@ -48,12 +48,14 @@ const render = (renderArray) => {
     });
 
     modalTarget.innerHTML = `
-    <div class=model--parent>
-    <div class=model--content>
-    <div class=modalName><h3>${renderArray[0].name}</div></b></div>
-    <div class=modalDesc>${renderArray[0].description}</div>
-    <div class=modalImg>${htmlVar}</div>
-    </div>
+    <div class="parks">
+        <div class=model--parent>
+        <div class=model--content>
+        <div class=modalName><h3>${renderArray[0].name}</div></b></div>
+        <div class=modalDesc>${renderArray[0].description}</div>
+        <div class=modalImg>${htmlVar}</div>
+        </div>
+        </div>
     </div>
     `
 }
