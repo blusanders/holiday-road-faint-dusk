@@ -11,11 +11,12 @@ export const ForecastPreview = (lat,lon) => {
   }
 
   const Forecast = (forecastObj) => {
-      return `
+    console.log(forecastObj.temp.day)  
+    return `
       <div class="forecastCard"> 
         <div>${convertDt(forecastObj.dt)}</div>
         <div><img src="http://openweathermap.org/img/wn/${forecastObj.weather[0].icon}@2x.png"></div>
-        <div>${forecastObj.weather[0].main}</div>
+        <div>${forecastObj.temp.day}°F</div>
         <div>${forecastObj.weather[0].description}</div>
       </div>
       `
@@ -45,12 +46,7 @@ const convertDt = (dt) => {
   let dayText = dateObject.toLocaleString("en-US", {weekday: "long"}) // Monday
   let monthText = dateObject.toLocaleString("en-US", {month: "long"}) // December
   let dayNumText = dateObject.toLocaleString("en-US", {day: "numeric"}) // 9
-  let dayLongText = dateObject.toLocaleString("en-US", {timeZoneName: "short"}) // 12/9/2019, 10:30:15 AM CST
-
+ 
   return `${dayText} ${monthText}, ${dayNumText} `
-
-  // dateObject.toLocaleString("en-US", {year: "numeric"}) // 2019
-  // dateObject.toLocaleString("en-US", {hour: "numeric"}) // 10 AM
-  // dateObject.toLocaleString("en-US", {minute: "numeric"}) // 30
-  // dateObject.toLocaleString("en-US", {second: "numeric"}) // 15
 }
+

@@ -7,8 +7,8 @@ eventHub.addEventListener("attractionChosen", event =>{
     let [attractionId, attractionName] = event.detail.chosenAttraction.split("--")
     contentTarget.innerHTML = `
     <h3>${attractionName}</h3>
-    <button id="attractionDetailButton" value="${attractionId}">Details</button>
-    `
+    <button id="attractionDetailButton" value="${attractionId}">Details</button>`
+    modalTarget.innerHTML = ""
 })
 
 eventHub.addEventListener("click", clickEvent =>  {
