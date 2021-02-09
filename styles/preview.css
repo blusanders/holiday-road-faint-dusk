@@ -1,5 +1,5 @@
 .itineraryPreview {
-    background-color: #F39C91;
+    background-color: #ffddd2;
     padding: 20px;
     margin: 20px 0 0;
     min-height: 300px;
@@ -21,10 +21,10 @@
 }
 
 .forecastCard {
-    background-color: #6CDADA;
+    background-color: #83c5be;
     color: white;
     border-radius: 2%;
-    /* text-shadow: 0px 0px 1px gray; */
+    text-shadow: 0px 0px 3px teal;
     width: 160px;
     font-size: 18px;
 }
@@ -35,7 +35,9 @@
 
 button {
     border: 1px solid #F7F0F0;
+    color: #006d77;
     padding: 4px;
-    background-color: #F7F0F0;
+    border-radius: 3px;
+    background-color: #edf6f9;
     font-size: 10pt;
 }
