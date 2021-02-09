@@ -24,7 +24,7 @@
     background-color: #83c5be;
     color: white;
     border-radius: 2%;
-    text-shadow: 0px 0px 3px teal;
+    /* text-shadow: 0px 0px 3px teal; */
     width: 160px;
     font-size: 18px;
 }
