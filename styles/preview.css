@@ -10,7 +10,7 @@
 
 .weatherPreview {
 	margin: 4px;
-	color: white;
+	
 }
 
 .forecast {
@@ -22,6 +22,16 @@
 .forecastCard {
 	background-color: lightskyblue;
     border-radius: 2%;
-    text-shadow: 0px 0px 5px skyblue;
+    text-shadow: 0px 0px 5px gray;
     width: 160px;
+    height: auto;
+    color: white;
+}
+
+.parkModal, .attractionModal, .eateriesModal {
+    background-color: salmon;
+}
+
+.parks, .eatery, .attractions {
+    padding: 20px;
 }

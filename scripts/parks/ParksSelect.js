@@ -44,8 +44,8 @@ eventHub.addEventListener("change", event => {
         const [lat,lon,parkCode,parkName] = event.target.value.split("&")
         const customEvent = new CustomEvent("parkSelected", {
             detail: {
-                parkLon: lat,
-                parkLat: lon,
+                parkLat: lat,
+                parkLon: lon,
                 parkCode: parkCode,
                 parkName: parkName
             }
